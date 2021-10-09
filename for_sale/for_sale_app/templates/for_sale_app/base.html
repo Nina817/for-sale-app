@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+{% load static %}
+<head>
+    <title>For Sale App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'for_sale_app/style.css' %}">
+</head>
+<body>
+<nav>
+    <ul class="w-50 d-flex justify-content-between">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
