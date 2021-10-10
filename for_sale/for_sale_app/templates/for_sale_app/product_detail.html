@@ -1,0 +1,16 @@
+{% extends 'for_sale_app/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Product detail</h1>
+    <p>{{ object }}</p>
+    <p>£{{ object.price }}</p>
+    <p>Seller: {{ object.user }}</p>
+    <p>Category: {{ object.get_category_display }}</p>
+    <p>Description: {{ object.description }}</p>
+    {% if object.picture %}
+        <img class="product-detail-picture" src="{% static object.picture %}">
+    {% else %}
+        <img class="product-detail-picture" src="{% static 'images/default.jpg' %}"
+    {% endif %}
+{% endblock %}

@@ -1,8 +1,10 @@
-h1{
-    background-color: green;
-}
 
 ul, li{
     list-style: none;
 }
 
+.product-detail-picture{
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+}

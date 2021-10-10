@@ -6,7 +6,7 @@
 
     <ul>
     {% for product in product_list %}
-        <li>{{ product }}</li>
+        <li><a href="{{ product.get_absolute_url }}">{{ product }}</a></li>
     {% endfor %}
     </ul>
 
